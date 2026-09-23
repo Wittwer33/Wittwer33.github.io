@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///C:/Users/jerom/Downloads/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jérôme Wittwer | Health Economist</title>
+  <meta name="description" content="Jérôme Wittwer — Professor of Economics at the University of Bordeaux. Health economist focusing on access to care, long-term care, and health inequalities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Jérôme Wittwer _ Health Economist_files/css2" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --panel: #fffdf9;
+      --ink: #1d2430;
+      --muted: #5f6672;
+      --line: #e2ddd3;
+      --accent: #8a1f3d;
+      --accent-soft: #f5eaf0;
+      --chip: #fdf2f6;
+      --shadow: 0 20px 40px rgba(18, 19, 21, 0.06);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Inter", sans-serif;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 32px 24px 80px;
+      display: grid;
+      grid-template-columns: 300px minmax(0, 1fr);
+      gap: 56px;
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 24px;
+      align-self: start;
+      padding: 12px 0;
+    }
+
+    .profile h1 {
+      font-family: "Libre Baskerville", serif;
+      font-size: clamp(2.3rem, 4vw, 3.5rem);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+      margin: 0 0 12px;
+      font-weight: 700;
+    }
+
+    .role {
+      font-size: 1.05rem;
+      margin: 0 0 18px;
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .affiliations {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .affiliations li {
+      margin-bottom: 8px;
+    }
+
+    .mail {
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 26px;
+    }
+
+    .nav {
+      border-top: 1px solid var(--line);
+      padding-top: 8px;
+    }
+
+    .nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav li {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--ink);
+      padding: 12px 0;
+      text-decoration: none;
+    }
+
+    .nav a:hover {
+      color: var(--accent);
+    }
+
+    .nav .count {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    main {
+      min-width: 0;
+    }
+
+    section {
+      margin-bottom: 54px;
+    }
+
+    h2 {
+      font-family: "Libre Baskerville", serif;
+      font-size: clamp(2rem, 3vw, 2.7rem);
+      letter-spacing: -0.04em;
+      margin: 0 0 18px;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+
+    .lede {
+      font-family: "Libre Baskerville", serif;
+      font-size: clamp(1.35rem, 2vw, 1.8rem);
+      line-height: 1.4;
+      max-width: 38rem;
+      margin: 0 0 22px;
+      color: var(--ink);
+    }
+
+    .tags {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+    }
+
+    .tags li {
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+
+    .cv-blocks {
+      display: grid;
+      gap: 26px;
+    }
+
+    .cv-block {
+      padding-top: 8px;
+    }
+
+    .cv-block h3 {
+      margin: 0 0 10px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .cv-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .cv-list li {
+      display: grid;
+      grid-template-columns: 140px minmax(0, 1fr);
+      gap: 18px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .cv-year {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding-top: 2px;
+    }
+
+    .cv-text {
+      color: var(--ink);
+    }
+
+    .tools {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px 16px;
+      margin-bottom: 18px;
+    }
+
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      flex: 1 1 550px;
+    }
+
+    .filter-btn {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font: inherit;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+
+    .filter-btn .count {
+      opacity: 0.9;
+      margin-left: 4px;
+    }
+
+    .search {
+      flex: 1 1 260px;
+      min-width: 220px;
+      padding: 11px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font: inherit;
+      background: var(--panel);
+      color: var(--ink);
+    }
+
+    .search:focus, .filter-btn:focus {
+      outline: 2px solid rgba(138,31,61,0.25);
+      outline-offset: 2px;
+    }
+
+    .status {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .publications {
+      display: grid;
+      gap: 18px;
+    }
+
+    .year-group {
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+      display: grid;
+      grid-template-columns: 115px minmax(0, 1fr);
+      gap: 20px;
+    }
+
+    .year-label {
+      font-family: "Libre Baskerville", serif;
+      font-size: clamp(1.7rem, 2vw, 2.1rem);
+      color: var(--accent);
+      line-height: 1.1;
+      padding-top: 4px;
+    }
+
+    .pub-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .pub-list li {
+      line-height: 1.6;
+      color: var(--ink);
+      overflow-wrap: anywhere;
+    }
+
+    .pub-label {
+      display: inline-block;
+      margin-right: 8px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .empty {
+      color: var(--muted);
+      font-style: italic;
+      padding: 12px 0;
+    }
+
+    .footer {
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 16px;
+      }
+
+      .nav li {
+        border: none;
+      }
+
+      .nav a {
+        padding: 10px 0;
+      }
+
+      .nav .count {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .cv-list li {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+
+      .year-group {
+        grid-template-columns: 1fr;
+      }
+
+      .year-label {
+        padding-top: 0;
+      }
+
+      .tags {
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="profile">
+        <h1>Jérôme<br>Wittwer</h1>
+        <p class="role">Professor of Economics, University of Bordeaux</p>
+
+        <ul class="affiliations">
+          <li>Bordeaux School of Public Health (<a href="http://www.isped.u-bordeaux.fr/">ISPED</a>)</li>
+          <li><a href="https://www.bordeaux-population-health.center/">Bordeaux Population Health</a>, Inserm U1219</li>
+          <li>HOPE — Understanding Human Well-being and Behavior for better Policies &amp; Societies</li>
+        </ul>
+
+        <a class="mail" href="mailto:jerome.wittwer@u-bordeaux.fr">jerome.wittwer@u-bordeaux.fr</a>
+      </div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="file:///C:/Users/jerom/Downloads/index.html#about">About <span class="count">01</span></a></li>
+          <li><a href="file:///C:/Users/jerom/Downloads/index.html#cv">Curriculum Vitae <span class="count">02</span></a></li>
+          <li><a href="file:///C:/Users/jerom/Downloads/index.html#publications">Publications <span class="count">03</span></a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section id="about">
+        <p class="lede">
+          Health economist evaluating health policies and programmes, with a focus on who gets access to care and who pays for it.
+        </p>
+
+        <ul class="tags">
+          <li>Healthcare policy evaluation</li>
+          <li>Access to care</li>
+          <li>Long-term care</li>
+          <li>Health inequalities</li>
+        </ul>
+      </section>
+
+      <section id="cv">
+        <h2>Curriculum vitae</h2>
+
+        <div class="cv-blocks">
+          <div class="cv-block">
+            <h3>Education</h3>
+            <ul class="cv-list">
+              <li>
+                <div class="cv-year">2000</div>
+                <div class="cv-text">Agrégation des universités en sciences économiques</div>
+              </li>
+              <li>
+                <div class="cv-year">1993</div>
+                <div class="cv-text">PhD in Economics, Université Paris Dauphine</div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cv-block">
+            <h3>University service</h3>
+            <ul class="cv-list">
+              <li>
+                <div class="cv-year">Since 2015</div>
+                <div class="cv-text">
+                  Director of the University of Bordeaux degree in health economic evaluation (<em>DU Méthodes et Pratiques en Évaluation Médico-Économique</em>) and co-director of the master track <em>Public Health and Health Policy</em>, jointly with Sciences Po Bordeaux.
+                </div>
+              </li>
+              <li>
+                <div class="cv-year">2015–2026</div>
+                <div class="cv-text">
+                  Member of the management board and management committee of the Bordeaux School of Public Health (ISPED).
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="cv-block">
+            <h3>Memberships &amp; affiliations</h3>
+            <ul class="cv-list">
+              <li>
+                <div class="cv-year">2024–2027</div>
+                <div class="cv-text">Member of the French Health Accounts Committee (<em>Commission des comptes de la santé</em>).</div>
+              </li>
+              <li>
+                <div class="cv-year">2019–2025</div>
+                <div class="cv-text">Member of the High Council for the Future of Health Insurance (<em>Haut Conseil pour l’Avenir de l’Assurance Maladie</em>).</div>
+              </li>
+              <li>
+                <div class="cv-year">Since 2019</div>
+                <div class="cv-text">Editor-in-chief, <em>Journal de Gestion et d’Économie de la Santé</em>.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+
+        <div class="tools">
+          <div class="filter-group" id="filters">
+          <button class="filter-btn active" data-cat="all" type="button">
+            All <span class="count">23</span>
+          </button>
+        
+          <button class="filter-btn " data-cat="econ" type="button">
+            Economics journals <span class="count">12</span>
+          </button>
+        
+          <button class="filter-btn " data-cat="health" type="button">
+            Public health journals <span class="count">8</span>
+          </button>
+        
+          <button class="filter-btn " data-cat="opinion" type="button">
+            Op-eds &amp; policy briefs <span class="count">2</span>
+          </button>
+        
+          <button class="filter-btn " data-cat="report" type="button">
+            Reports <span class="count">1</span>
+          </button>
+        </div>
+          <input class="search" id="searchInput" type="search" placeholder="Search by title, co-author, journal..." aria-label="Search publications">
+        </div>
+
+        <p class="status" id="status">23 items</p>
+
+        <div class="publications" id="publicationList">
+        <div class="year-group">
+          <div class="year-label">2026</div>
+          <ul class="pub-list">
+            
+              <li>
+                <span class="pub-label">Economics journals</span>
+                Krier D, Abouelfath A, Jové J, Amieva H, Carcaillon-Bentata L, Wittwer J. Healthcare Utilization Among Older Adults With Dementia in France: A Comparative Analysis of a Dementia Village and Traditional Nursing Homes. Value in Health. 2026.
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="year-group">
+          <div class="year-label">2025</div>
+          <ul class="pub-list">
+            
+              <li>
+                <span class="pub-label">Economics journals</span>
+                Carré B, Jusot F, Wittwer J. Do Prices Matter for Healthcare Accessibility? Evidence From a Means-Tested Complementary Health Insurance in France. Health Econ. 2025.
+              </li>
+            
+              <li>
+                <span class="pub-label">Public health journals</span>
+                Blanco-Cazeaux I, Ferté T, Bruzek C, Gaudart M, Ngabdo K, Wittwer J, Francis-Oliviero F. Targeting health equity through complex health interventions: Which evaluation methods and designs are used? A scoping review. Public Health. 2025.
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="year-group">
+          <div class="year-label">2024</div>
+          <ul class="pub-list">
+            
+              <li>
+                <span class="pub-label">Economics journals</span>
+                Bas A.-C., Wittwer J. How competition plays a role in dental pricing? A study on French medico-administrative and tax reports dataset. Health Policy. 2024.
+              </li>
+            
+              <li>
+                <span class="pub-label">Public health journals</span>
+                Krier D, Le Goff M, Helmer C, Wittwer J. Mortality in Newly Admitted Nursing Home Older Adults with Dementia in France. Geriatrics. 2024.
+              </li>
+            
+              <li>
+                <span class="pub-label">Op-eds &amp; policy briefs</span>
+                Jusot F, Marsaudon A, Dourgnon P, Wittwer J. L’Aide Médicale de l’État : un dispositif humaniste et efficient. Regards. 2024.
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="year-group">
+          <div class="year-label">2023</div>
+          <ul class="pub-list">
+            
+              <li>
+                <span class="pub-label">Economics journals</span>
+                Dourgnon P, Jusot F, Marsaudon A, Sarhiri J, Wittwer J. Just a question of time? Explaining non-take-up of a public health insurance program designed for undocumented immigrants living in France. Health Econ Policy Law. 2023.
+              </li>
+            
+              <li>
+                <span class="pub-label">Public health journals</span>
+                Wallerich L, Fillol A, Rivadeneyra A, Vandentorren S, Wittwer J, Cambon L. Environment and child well-being: A scoping review of reviews to guide policies. Health Promot Perspect. 2023.
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="year-group">
+          <div class="year-label">2022</div>
+          <ul class="pub-list">
+            
+              <li>
+                <span class="pub-label">Economics journals</span>
+                Gaillard A, García-Lorenzo B, Renaud T, Wittwer J. Does integrated care mean fewer hospitalizations? An evaluation of a French field experiment. Health Policy. 2022.
+              </li>
+            
+              <li>
+                <span class="pub-label">Public health journals</span>
+                Vignier N, Moussaoui S, Marsaudon A, Wittwer J, Jusot F, Dourgnon P. Burden of infectious diseases among undocumented migrants in France. Front Public Health. 2022.
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="year-group">
+          <div class="year-label">2021</div>
+          <ul class="pub-list">
+            
+              <li>
+                <span class="pub-label">Economics journals</span>
+                Arnault L, Wittwer J. The Effect of the 2015 Reform of the Personalized Autonomy Allowance on the Care Plans Notified to Beneficiaries. Economie et Statistique. 2021.
+              </li>
+            
+              <li>
+                <span class="pub-label">Public health journals</span>
+                Raimond V, Kaltenbach E, Adam C, Lazzarotto S, Le Galès C, Perrier L, Wittwer J. Challenges raised by the economic evaluation of CAR-T-cell therapies. Bull Cancer. 2021.
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="year-group">
+          <div class="year-label">2020</div>
+          <ul class="pub-list">
+            
+              <li>
+                <span class="pub-label">Economics journals</span>
+                Thébaut C, Weil-Dubuc P.-L, Wittwer J. Justifications philosophiques du critère de fair innings et controverses. Les ateliers de l’éthique. 2020.
+              </li>
+            
+              <li>
+                <span class="pub-label">Public health journals</span>
+                Bas AC, Dourgnon P, Azogui-Levy S, Wittwer J. Impact of fees on access to dental care: evidence from France. European Journal of Public Health. 2020.
+              </li>
+            
+              <li>
+                <span class="pub-label">Op-eds &amp; policy briefs</span>
+                Wittwer J, Rochaix L. La mort de Claude Le Pen, économiste de la santé. Le Monde. 2020.
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="year-group">
+          <div class="year-label">2019</div>
+          <ul class="pub-list">
+            
+              <li>
+                <span class="pub-label">Economics journals</span>
+                Castry M, Wittwer J, Montagni I, Tzourio C. Les déterminants du renoncement aux soins pour raisons financières des étudiants. Revue d’économie politique. 2019.
+              </li>
+            
+              <li>
+                <span class="pub-label">Public health journals</span>
+                Broussy S, Rouanet F, Lesaine E, Domecq S, Kret M, Maugeais M, Aly F, Dehail P, Bénard A, Wittwer J, Salamon R, Sibon I, Saillour-Glenisson F. Post-stroke pathway analysis and link with one year sequelae in a French cohort. BMC Health Services Research. 2019.
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="year-group">
+          <div class="year-label">2018</div>
+          <ul class="pub-list">
+            
+              <li>
+                <span class="pub-label">Economics journals</span>
+                Wittwer J. Le rôle de l’évaluation économique dans la régulation des prix des médicaments innovants protégés par des brevets. Revue française des affaires sociales. 2018.
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="year-group">
+          <div class="year-label">2017</div>
+          <ul class="pub-list">
+            
+              <li>
+                <span class="pub-label">Economics journals</span>
+                Dumontet M, Buchmueller T, Dourgnon P, Jusot F, Wittwer J. Gatekeeping and the utilization of physician services in France. Health Policy. 2017.
+              </li>
+            
+              <li>
+                <span class="pub-label">Public health journals</span>
+                Grasset L, Joly P, Jacqmin-Gadda H, Letenneur L, Wittwer J, Amieva H, Helmer C, Dartigues JF. Real benefit of a protective factor against dementia. PLoS One. 2017.
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="year-group">
+          <div class="year-label">2015</div>
+          <ul class="pub-list">
+            
+              <li>
+                <span class="pub-label">Economics journals</span>
+                Le Clainche C, Wittwer J. Responsibility-sensitive fairness in health financing: judgments in four European countries. Health Econ. 2015.
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="year-group">
+          <div class="year-label">2014</div>
+          <ul class="pub-list">
+            
+              <li>
+                <span class="pub-label">Economics journals</span>
+                Guthmuller S, Jusot F, Wittwer J. Improving take-up of health insurance program: a social experiment in France. Journal of Human Resources. 2014.
+              </li>
+            
+          </ul>
+        </div>
+      
+        <div class="year-group">
+          <div class="year-label">2010</div>
+          <ul class="pub-list">
+            
+              <li>
+                <span class="pub-label">Reports</span>
+                Wittwer J, Jusot F, Guthmuller S, Desprès C, Renaud T. Le recours à l’Aide Complémentaire Santé à Lille: Résultats d’une expérimentation sociale. 2010.
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+      </section>
+
+      <div class="footer">Last updated September 2026</div>
+    </main>
+  </div>
+
+  <script>
+    const data = [
+      { year: 2026, cat: "econ", text: "Krier D, Abouelfath A, Jové J, Amieva H, Carcaillon-Bentata L, Wittwer J. Healthcare Utilization Among Older Adults With Dementia in France: A Comparative Analysis of a Dementia Village and Traditional Nursing Homes. Value in Health. 2026."},
+      { year: 2025, cat: "econ", text: "Carré B, Jusot F, Wittwer J. Do Prices Matter for Healthcare Accessibility? Evidence From a Means-Tested Complementary Health Insurance in France. Health Econ. 2025."},
+      { year: 2025, cat: "health", text: "Blanco-Cazeaux I, Ferté T, Bruzek C, Gaudart M, Ngabdo K, Wittwer J, Francis-Oliviero F. Targeting health equity through complex health interventions: Which evaluation methods and designs are used? A scoping review. Public Health. 2025."},
+      { year: 2024, cat: "econ", text: "Bas A.-C., Wittwer J. How competition plays a role in dental pricing? A study on French medico-administrative and tax reports dataset. Health Policy. 2024."},
+      { year: 2024, cat: "health", text: "Krier D, Le Goff M, Helmer C, Wittwer J. Mortality in Newly Admitted Nursing Home Older Adults with Dementia in France. Geriatrics. 2024."},
+      { year: 2024, cat: "opinion", text: "Jusot F, Marsaudon A, Dourgnon P, Wittwer J. L’Aide Médicale de l’État : un dispositif humaniste et efficient. Regards. 2024."},
+      { year: 2023, cat: "econ", text: "Dourgnon P, Jusot F, Marsaudon A, Sarhiri J, Wittwer J. Just a question of time? Explaining non-take-up of a public health insurance program designed for undocumented immigrants living in France. Health Econ Policy Law. 2023."},
+      { year: 2023, cat: "health", text: "Wallerich L, Fillol A, Rivadeneyra A, Vandentorren S, Wittwer J, Cambon L. Environment and child well-being: A scoping review of reviews to guide policies. Health Promot Perspect. 2023."},
+      { year: 2022, cat: "econ", text: "Gaillard A, García-Lorenzo B, Renaud T, Wittwer J. Does integrated care mean fewer hospitalizations? An evaluation of a French field experiment. Health Policy. 2022."},
+      { year: 2022, cat: "health", text: "Vignier N, Moussaoui S, Marsaudon A, Wittwer J, Jusot F, Dourgnon P. Burden of infectious diseases among undocumented migrants in France. Front Public Health. 2022."},
+      { year: 2021, cat: "econ", text: "Arnault L, Wittwer J. The Effect of the 2015 Reform of the Personalized Autonomy Allowance on the Care Plans Notified to Beneficiaries. Economie et Statistique. 2021."},
+      { year: 2021, cat: "health", text: "Raimond V, Kaltenbach E, Adam C, Lazzarotto S, Le Galès C, Perrier L, Wittwer J. Challenges raised by the economic evaluation of CAR-T-cell therapies. Bull Cancer. 2021."},
+      { year: 2020, cat: "econ", text: "Thébaut C, Weil-Dubuc P.-L, Wittwer J. Justifications philosophiques du critère de fair innings et controverses. Les ateliers de l’éthique. 2020."},
+      { year: 2020, cat: "health", text: "Bas AC, Dourgnon P, Azogui-Levy S, Wittwer J. Impact of fees on access to dental care: evidence from France. European Journal of Public Health. 2020."},
+      { year: 2020, cat: "opinion", text: "Wittwer J, Rochaix L. La mort de Claude Le Pen, économiste de la santé. Le Monde. 2020."},
+      { year: 2019, cat: "econ", text: "Castry M, Wittwer J, Montagni I, Tzourio C. Les déterminants du renoncement aux soins pour raisons financières des étudiants. Revue d’économie politique. 2019."},
+      { year: 2019, cat: "health", text: "Broussy S, Rouanet F, Lesaine E, Domecq S, Kret M, Maugeais M, Aly F, Dehail P, Bénard A, Wittwer J, Salamon R, Sibon I, Saillour-Glenisson F. Post-stroke pathway analysis and link with one year sequelae in a French cohort. BMC Health Services Research. 2019."},
+      { year: 2018, cat: "econ", text: "Wittwer J. Le rôle de l’évaluation économique dans la régulation des prix des médicaments innovants protégés par des brevets. Revue française des affaires sociales. 2018."},
+      { year: 2017, cat: "econ", text: "Dumontet M, Buchmueller T, Dourgnon P, Jusot F, Wittwer J. Gatekeeping and the utilization of physician services in France. Health Policy. 2017."},
+      { year: 2017, cat: "health", text: "Grasset L, Joly P, Jacqmin-Gadda H, Letenneur L, Wittwer J, Amieva H, Helmer C, Dartigues JF. Real benefit of a protective factor against dementia. PLoS One. 2017."},
+      { year: 2015, cat: "econ", text: "Le Clainche C, Wittwer J. Responsibility-sensitive fairness in health financing: judgments in four European countries. Health Econ. 2015."},
+      { year: 2014, cat: "econ", text: "Guthmuller S, Jusot F, Wittwer J. Improving take-up of health insurance program: a social experiment in France. Journal of Human Resources. 2014."},
+      { year: 2010, cat: "report", text: "Wittwer J, Jusot F, Guthmuller S, Desprès C, Renaud T. Le recours à l’Aide Complémentaire Santé à Lille: Résultats d’une expérimentation sociale. 2010."}
+    ];
+
+    const labels = {
+      all: "All",
+      econ: "Economics journals",
+      health: "Public health journals",
+      opinion: "Op-eds & policy briefs",
+      report: "Reports"
+    };
+
+    const state = {
+      category: "all",
+      query: ""
+    };
+
+    const filters = document.getElementById("filters");
+    const publicationList = document.getElementById("publicationList");
+    const status = document.getElementById("status");
+    const searchInput = document.getElementById("searchInput");
+
+    function renderFilters() {
+      const categories = ["all", "econ", "health", "opinion", "report"];
+      filters.innerHTML = categories.map((cat) => {
+        const count = cat === "all"
+          ? data.length
+          : data.filter(item => item.cat === cat).length;
+
+        return `
+          <button
+            class="filter-btn ${state.category === cat ? "active" : ""}"
+            data-cat="${cat}"
+            type="button"
+          >
+            ${labels[cat]} <span class="count">${count}</span>
+          </button>
+        `;
+      }).join("");
+
+      filters.querySelectorAll(".filter-btn").forEach((button) => {
+        button.addEventListener("click", () => {
+          state.category = button.dataset.cat;
+          render();
+        });
+      });
+    }
+
+    function matches(item, query) {
+      if (!query) return true;
+      const haystack = `${item.text} ${item.cat} ${item.year}`.toLowerCase();
+      return haystack.includes(query.toLowerCase());
+    }
+
+    function render() {
+      const filtered = data.filter((item) => {
+        const categoryMatch = state.category === "all" || item.cat === state.category;
+        const queryMatch = matches(item, state.query);
+        return categoryMatch && queryMatch;
+      });
+
+      const grouped = filtered.reduce((acc, item) => {
+        if (!acc[item.year]) acc[item.year] = [];
+        acc[item.year].push(item);
+        return acc;
+      }, {});
+
+      const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
+
+      status.textContent = `${filtered.length} item${filtered.length === 1 ? "" : "s"}${state.query ? ` matching "${state.query}"` : ""}`;
+
+      if (!years.length) {
+        publicationList.innerHTML = "<div class='empty'>No publications match your search.</div>";
+        return;
+      }
+
+      publicationList.innerHTML = years.map((year) => `
+        <div class="year-group">
+          <div class="year-label">${year}</div>
+          <ul class="pub-list">
+            ${grouped[year].map(item => `
+              <li>
+                <span class="pub-label">${labels[item.cat]}</span>
+                ${item.text}
+              </li>
+            `).join("")}
+          </ul>
+        </div>
+      `).join("");
+    }
+
+    searchInput.addEventListener("input", (event) => {
+      state.query = event.target.value.trim();
+      render();
+    });
+
+    renderFilters();
+    render();
+  </script>
+
+</body></html>
